@@ -70,5 +70,6 @@ function deleteTask(index){
 //clear All button
 clrAllBtn.onclick =()=>{
     localStorage.clear(); //Clearing the local storage
+    addBtn.classList.remove("active");//unactive the add button
     showTasks(); //After clearing, again updating..
 }
