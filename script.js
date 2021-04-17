@@ -31,6 +31,7 @@ addBtn.onclick = ()=>{
     listArr.push(userData); //Adding user data
     localStorage.setItem("Todo", JSON.stringify(listArr));
     showTasks(); //calling showTask function
+    addBtn.classList.remove("active");//unactive the add button
 }
 //function to add task list inside ul tag
 function showTasks(){
